@@ -45,7 +45,11 @@
 }
 
 #mainHead header img {
-    background-color: black;
+    object-fit: contain;
+    background-color: lightblue;
+    height: 300px;
+    max-height: 30%;
+    width: 100%;
 }
 
 #mainCentered {
