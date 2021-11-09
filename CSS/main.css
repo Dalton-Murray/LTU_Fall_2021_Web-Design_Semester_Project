@@ -28,5 +28,29 @@
 
 
 /* ======================== */
-/* ===== 1. UNIVERSAL ===== */
+/*  ====== 1. MAIN ======   */
 /* ======================== */
+#mainHead{
+    position: relative;
+    text-align: center;
+}
+
+#mainHead header{
+    opacity: 0.7;
+}
+
+#mainHead header a {
+    text-decoration-line: none;
+    color: white;
+}
+
+#mainHead header img {
+    background-color: black;
+}
+
+#mainCentered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
