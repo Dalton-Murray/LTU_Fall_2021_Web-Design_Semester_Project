@@ -7,6 +7,8 @@
 	<meta charset="utf-8">
 	<title>State Landmarks Index</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" href="CSS/main.css">
 
 	<!-- Accessbility for other screen resolution/sizes -->
@@ -19,7 +21,7 @@
 	<div id="wrapper">
 
 		<!-- Creates a division for the header -->
-		<div id="mainHead">
+		<div id="mainHead" class="mainHide">
 
 			<header>
 				<img src="Assets/US-Map.png" alt="Image of colourful map of United States">
@@ -34,20 +36,42 @@
 
 		</div>
 
-		<div id="nav">
-			<nav>
+		<div id="nav-container">
+			<div id="nav-overlay"></div>
+				<nav id="nav-fullscreen">
+					<ul id="datalist">
+						<li><a class="shown" href="#">Home</a></li>
+						<li><a id="more" href="#">States</a></li>
+						<li><a id="menu" href="#">Menu</a></li>
+							<li id="indentedMenu" class="hidden"><a href="#">State 1</a></li>
+							<li id="indentedMenu" class="hidden"><a href="#">State 2</a></li>
+							<li id="indentedMenu" class="hidden"><a href="#">State 3</a></li>
+							<li id="indentedMenu" class="hidden"><a href="#">State 4</a></li>
+							<li id="indentedMenu" class="hidden"><a href="#">State 5</a></li>
+							<li id="indentedMenu" class="hidden"><a href="#">State 6</a></li>
+							<li id="indentedMenu" class="hidden"><a href="#">State 7</a></li>
+							<li id="indentedMenu" class="hidden"><a href="#">State 8</a></li>
+							<li id="indentedMenu" class="hidden"><a href="#">State 9</a></li>
+							<li id="indentedMenu" class="hidden"><a href="#">State 10</a></li>
+						<li><a class="shown" href="#">About</a></li>
+						<li><a class="shown" href="#">Contact</a></li>
 
-			</nav>
+					</ul>
+				</nav>
+
+				<a id="nav-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
 		</div>
-
-
 
 		<main>
 
 		</main>
 
 
-		<div id="footer">
+		<div id="footer" class="mainHide">
 			<footer>
 				<a href="contactUs.html">Contact Us</a>
 				<br>
@@ -64,5 +88,7 @@
 
 	</div>
 
+	<!-- partial -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script src="JS/main.js"></script>
 </body>
 </html>
