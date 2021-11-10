@@ -6,8 +6,8 @@
 
 /* ============================== */
 /* = DOCUMENT INFORMATION       = */
-/* =	- Document:  */
-/* =	- Version:  1.0.1       = */
+/* =	- Document: main.css    = */
+/* =	- Version:  1.0.2       = */
 /* = 	- Client:   Windows 10  = */
 /* ============================== */
 
@@ -23,7 +23,7 @@
 
 /* ======================== */
 /* CSS DIRECTORY		  = */
-/*	1. UNIVERSAL		  = */
+/*	1. MAIN     		  = */
 /* ======================== */
 
 
@@ -35,7 +35,7 @@
     text-align: center;
 }
 
-#mainHead header{
+#mainHead header {
     opacity: 0.7;
 }
 
@@ -44,12 +44,17 @@
     color: white;
 }
 
+#mainHead header a:hover {
+    color: lightgray;
+}
+
 #mainHead header img {
     object-fit: contain;
     background-color: lightblue;
     height: 300px;
     max-height: 30%;
     width: 100%;
+    border-bottom: 2px solid black;
 }
 
 #mainCentered {
@@ -57,4 +62,53 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-bottom: 1px solid white;
+}
+
+#menuButton {
+    
+}
+
+#menuButton img{
+    
+}
+
+/* ======================== */
+/*  ====== 2. BODY ======   */
+/* ======================== */
+body {
+    margin: 0;
+}
+
+
+
+/* ====================== */
+/* ===== 10. FOOTER ===== */
+/* ====================== */
+footer {
+    background-color: lightskyblue;
+	padding: 1em;
+	border-top: solid 2px black;
+	width: auto;
+	display: block;
+	border-bottom: solid 2px black;
+}
+
+
+
+/* ============================ */
+/* ===== 12. SCREEN 600PX ===== */
+/* ============================ */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* ============================= */
+/* ===== 13. SCREEN 1024PX ===== */
+/* ============================= */
+@media only screen and (min-width: 1024px) {
+
+	@supports (display: grid) {
+
+    }
 }

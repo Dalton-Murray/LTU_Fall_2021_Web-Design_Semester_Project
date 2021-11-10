@@ -15,28 +15,31 @@
 </head>
 <body>
 
+	<!-- Puts everything into a wrapper -->
 	<div id="wrapper">
 
+		<!-- Creates a division for the header -->
 		<div id="mainHead">
-			<header>
 
+			<header>
 				<img src="Assets/US-Map.png" alt="Image of colourful map of United States">
 
 				<div id="mainCentered">
 					<h1>
 						<a href="index.html">State Landmarks</a>
 					</h1>
+
 				</div>
-
 			</header>
-		</div>
 
+		</div>
 
 		<div id="nav">
 			<nav>
-				
+
 			</nav>
 		</div>
+
 
 
 		<main>
@@ -46,9 +49,19 @@
 
 		<div id="footer">
 			<footer>
-
+				<a href="contactUs.html">Contact Us</a>
+				<br>
+				<br>
+				Copyright &copy; <span id="currentYear"></span> | Dalton Murray, Gavin Poulton, Yousif Haddad
 			</footer>
 		</div>
+
+		<script>
+			const date = new Date();
+			let year = date.getFullYear();
+			document.getElementById("currentYear").innerHTML = year;
+		</script>
+
 	</div>
 
 </body>
