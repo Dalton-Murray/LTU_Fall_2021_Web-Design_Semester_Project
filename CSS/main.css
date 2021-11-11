@@ -189,7 +189,7 @@ html, body {
 }
 
 #nav-overlay {
-    background: linear-gradient(180deg, #16852e 10%, #36965b 50%, #2b6070 90%);
+    background: linear-gradient(180deg, #34c0fa 10%, #2387b0 50%, #11465c 90%);
 }
 
 #nav-toggle span {
@@ -238,6 +238,7 @@ body {
     overflow: hidden;
     color: white;
     margin: 0;
+    background-color: #e3ded9;
 }
 
 
