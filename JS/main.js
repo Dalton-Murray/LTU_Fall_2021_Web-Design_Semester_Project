@@ -3,57 +3,56 @@
 // Yousif Haddas
 
 // ========================================================================================================================== //
-// ========================================================================================================================== //
+
 // Handles resizing the navigation so it is properly fullscreen
 function resizeNav() {
     // Set the navigation height to fill the entire window
-    $("#nav-fullscreen").css({"height": window.innerHeight});
+    $("#navigationFull").css({"height": window.innerHeight});
 
     // We then set the radius of the circle to the length diagonal of the window
     // This makes it so that we don't accidentally set it to be bigger than the page
     var radius = Math.sqrt(Math.pow(window.innerHeight, 2) + Math.pow(window.innerWidth, 2));
     var diameter = radius * 2;
-    $("#nav-overlay").width(diameter);
-    $("#nav-overlay").height(diameter);
-    $("#nav-overlay").css({"margin-top": -radius, "margin-left": -radius});
+    $("#navigationOverlay").width(diameter);
+    $("#navigationOverlay").height(diameter);
+    $("#navigationOverlay").css({"margin-top": -radius, "margin-left": -radius});
 }
 
 // This Sets up the click and window resize callbacks
 $(document).ready(function() {
-    $("#nav-toggle").click(function() {
-        $("#nav-toggle, #nav-overlay, #nav-fullscreen").toggleClass("open");
+    $("#navigationToggle").click(function() {
+        $("#navigationToggle, #navigationOverlay, #navigationFull").toggleClass("open");
     });
 
     $(window).resize(resizeNav);
 
     resizeNav();
 
-	window.setTimeout(function() {
-        // This would make it so that when the page loads the navigation menu is opened by default, but we don't want to do that
-        // in this case
-		 // $("#nav-toggle").click();
-	}, 1000)
 });
-// ========================================================================================================================== //
-// ========================================================================================================================== //
-
 
 // ========================================================================================================================== //
-// ========================================================================================================================== //
+
+// Variable for counter
 var mainHidden = 0;
 
-
+// Detects if clicked on navigation button
 $(function () {
-    $('#nav-toggle').click(function () {
+    $('#navigationToggle').click(function () {
         // If it is clicked then we hide the menu button
         $('.mainHide').hide();
+        // Add 1 to mainHidden variable
         mainHidden++;
 
+        // Ensures overflow is hidden on click
         document.body.style.overflow = "hidden";
 
+        // Calculates if number is odd/even
         if (mainHidden % 2 == 0) {
+            // Adds a delay
             setTimeout(function () {
+                // Shows everythign in mainHide class
                 $('.mainHide').show();
+                // Sets overflow back to auto
                 document.body.style.overflow = "auto";
             }, 1430);
         }
@@ -91,6 +90,5 @@ $(function () {
         $('#more').show();
     });
 });
-// ========================================================================================================================== //
-// ========================================================================================================================== //
 
+// ========================================================================================================================== //

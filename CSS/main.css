@@ -118,12 +118,12 @@ main figure figcaption{
 /* ========================= */
 /* ===== 3. NAVIGATION ===== */
 /* ========================= */
-#nav-container {
+#navigationContainer {
     margin-right: auto;
     position: relative;
 }
 
-#nav-toggle {
+#navigationToggle {
     display: block;
     width: 32px;
     height: 32px;
@@ -137,7 +137,7 @@ main figure figcaption{
     overflow: hidden;
 }
 
-#nav-toggle span {
+#navigationToggle span {
     background-color: black;
     width: 100%;
     height: 4px;
@@ -149,39 +149,44 @@ main figure figcaption{
     transition: 0.5s ease-in-out;
 }
 
-#nav-toggle span:nth-child(1) {
+#navigationToggle span:nth-child(1) {
     top: 4px;
     transform-origin: left center;
 }
 
-#nav-toggle span:nth-child(2) {
+#navigationToggle span:nth-child(2) {
     top: 14px;
     transform-origin: left center;
 }
 
-#nav-toggle span:nth-child(3) {
+#navigationToggle span:nth-child(3) {
     top: 24px;
     transform-origin: left center;
 }
 
-#nav-toggle.open span:nth-child(1) {
+#navigationToggle.open span:nth-child(1) {
     transform: rotate(45deg);
     top: 3px;
     left: 4px;
 }
 
-#nav-toggle.open span:nth-child(2) {
+#navigationToggle.open span:nth-child(2) {
     width: 0%;
     opacity: 0;
 }
 
-#nav-toggle.open span:nth-child(3) {
+#navigationToggle.open span:nth-child(3) {
     transform: rotate(-45deg);
     top: 25px;
     left: 4px;
 }
 
-#nav-overlay {
+#navigationToggle span {
+    background-color: black;
+}
+
+
+#navigationOverlay {
     position: absolute;
     top: 16px;
     left: 16px;
@@ -192,11 +197,16 @@ main figure figcaption{
     transform: scale3d(0, 0, 0);
 }
 
-#nav-overlay.open {
+#navigationOverlay.open {
     transform: scale3d(1, 1, 1);
 }
 
-#nav-fullscreen {
+#navigationOverlay {
+    background: linear-gradient(180deg, #34c0fa 10%, #2387b0 50%, #11465c 90%);
+}
+
+
+#navigationFull {
     width: 100%;
     position: fixed;
     left: 0;
@@ -207,31 +217,23 @@ main figure figcaption{
     opacity: 0;
 }
 
-#nav-fullscreen ul {
+#navigationFull ul {
     list-style: none;
 }
 
-#nav-fullscreen a {
+#navigationFull a {
     color: white;
     text-decoration: none;
 }
 
-#nav-fullscreen.open {
+#navigationFull.open {
     visibility: visible;
     opacity: 1;
     transition: ease-in-out 0.5s;
     transition-delay: 0.25s;
 }
 
-#nav-overlay {
-    background: linear-gradient(180deg, #34c0fa 10%, #2387b0 50%, #11465c 90%);
-}
-
-#nav-toggle span {
-    background-color: black;
-}
-
-#nav-fullscreen {
+#navigationFull {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,7 +242,7 @@ main figure figcaption{
     font-size: 8vh;
 }
 
-#nav-fullscreen li:hover {
+#navigationFull li:hover {
     list-style: disc;
 }
 
