@@ -81,12 +81,43 @@ html, body {
 }
 
 #mainHide {
-    /* The purpose of this is solely for JavaScript reasons */
+    /* Do not edit */
+    /* The purpose of this is solely for JavaScript/jQuery reasons */
 }
+
+main h1{
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+main figure figcaption{
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.mainTableRow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.mainTableColumn {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.mainTableColumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
 /* ========================= */
 /* ===== 3. NAVIGATION ===== */
 /* ========================= */
-
 #nav-container {
     margin-right: auto;
     position: relative;
@@ -98,10 +129,12 @@ html, body {
     height: 32px;
     cursor: pointer;
     transform: rotate(0deg);
-
     position: fixed;
     top: 15px;;
     left: 10px;
+    border: 1px solid black;
+    border-radius: 100%;
+    overflow: hidden;
 }
 
 #nav-toggle span {
@@ -173,9 +206,11 @@ html, body {
     visibility: hidden;
     opacity: 0;
 }
+
 #nav-fullscreen ul {
     list-style: none;
 }
+
 #nav-fullscreen a {
     color: white;
     text-decoration: none;
@@ -204,13 +239,11 @@ html, body {
     font-family: sans-serif;
     font-size: 8vh;
 }
+
 #nav-fullscreen li:hover {
     list-style: disc;
 }
 
-/*
-
-*/
 
 #indentedMenu {
     margin-left: 5vh;
@@ -235,7 +268,6 @@ html, body {
 /* =================== */
 body {
     background-color: white;
-    overflow: hidden;
     color: white;
     margin: 0;
     background-color: #e3ded9;
@@ -257,19 +289,19 @@ footer {
 
 
 
-/* ============================ */
-/* ===== 12. SCREEN 600PX ===== */
-/* ============================ */
-@media only screen and (min-width: 600px) {
-
+/* ===================== */
+/* ===== 12. MEDIA ===== */
+/* ===================== */
+@media screen and (max-width: 600px) {
+    .mainTableColumn {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
-/* ============================= */
-/* ===== 13. SCREEN 1024PX ===== */
-/* ============================= */
-@media only screen and (min-width: 1024px) {
-
-	@supports (display: grid) {
-
+@media screen and (max-width: 800px) {
+    .mainTableColumn {
+        flex: 50%;
+        max-width: 50%;
     }
 }

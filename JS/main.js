@@ -47,12 +47,14 @@ $(function () {
     $('#nav-toggle').click(function () {
         // If it is clicked then we hide the menu button
         $('.mainHide').hide();
-
         mainHidden++;
+
+        document.body.style.overflow = "hidden";
 
         if (mainHidden % 2 == 0) {
             setTimeout(function () {
                 $('.mainHide').show();
+                document.body.style.overflow = "auto";
             }, 1430);
         }
 
