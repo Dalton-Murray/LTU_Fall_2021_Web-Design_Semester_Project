@@ -63,13 +63,12 @@ body header h1 {
     color: lightgray;
 }
 
-#mainhead header {
-    height: 250px;
+#mainHead header {
+    height: 300px;
     border-bottom: 1px solid black;
+    background-image: url("../Assets/mainBanner.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    font-size: 4em;
-    background-image: url("../Assets/mainBanner.jpg")
 }
 
 #mainCentered {
