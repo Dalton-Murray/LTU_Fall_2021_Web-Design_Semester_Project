@@ -89,6 +89,20 @@ main figure {
     height: 45vh;
 }
 
+.mainTableColumn figcaption {
+    font-size: 2.0vh;
+    color: black;
+}
+
+.mainTableColumn figcaption a {
+    text-decoration: none;
+}
+
+#mainSource {
+    padding-left: 45px;
+    text-decoration: none;
+}
+
 #noBorder {
     border: 0;
 }

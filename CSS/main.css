@@ -278,13 +278,30 @@ body {
 /* ===== 10. FOOTER ===== */
 /* ====================== */
 footer {
-    color: black;
-    background-color: lightskyblue;
+    color: white;
+    background-color: #1c5736;
 	padding: 1em;
 	border-top: solid 2px black;
 	width: auto;
 	display: block;
 	border-bottom: solid 2px black;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 1.2em;
+    font-style: normal;
+}
+
+footer a:hover {
+    color: lightgray;
+    text-shadow: 2px 2px black;
 }
 
 /* ===================== */
