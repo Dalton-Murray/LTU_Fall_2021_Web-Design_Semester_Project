@@ -50,8 +50,8 @@ html, body {
     text-align: center;
 }
 
-#mainHead header {
-    opacity: 0.7;
+body header h1 {
+    text-shadow: 2px 2px black;
 }
 
 #mainHead header a {
@@ -63,13 +63,13 @@ html, body {
     color: lightgray;
 }
 
-#mainHead header img {
-    object-fit: contain;
-    background-color: lightblue;
-    height: 300px;
-    max-height: 30%;
-    width: 100%;
-    border-bottom: 2px solid black;
+#mainhead header {
+    height: 250px;
+    border-bottom: 1px solid black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 4em;
+    background-image: url("../Assets/mainBanner.jpg")
 }
 
 #mainCentered {
@@ -77,7 +77,6 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-bottom: 1px solid white;
 }
 
 #mainHide {
@@ -101,11 +100,12 @@ main figure figcaption{
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    justify-content: center;
 }
 
 .mainTableColumn {
-    flex: 25%;
-    max-width: 25%;
+    flex: 33%;
+    max-width: 33%;
     padding: 0 4px;
 }
 
@@ -269,7 +269,6 @@ main figure figcaption{
 /* ===== 4. BODY ===== */
 /* =================== */
 body {
-    background-color: white;
     color: white;
     margin: 0;
     background-color: #e3ded9;
@@ -289,8 +288,6 @@ footer {
 	border-bottom: solid 2px black;
 }
 
-
-
 /* ===================== */
 /* ===== 12. MEDIA ===== */
 /* ===================== */
@@ -303,7 +300,7 @@ footer {
 
 @media screen and (max-width: 800px) {
     .mainTableColumn {
-        flex: 50%;
-        max-width: 50%;
+        flex: 100%;
+        max-width: 100%;
     }
 }

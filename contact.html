@@ -43,7 +43,7 @@
 			<div id="navigationOverlay"></div>
 				<nav id="navigationFull">
 					<ul id="datalist">
-						<li><a class="shown" href="#">Home</a></li>
+						<li><a class="shown" href="index.html">Home</a></li>
 						<li><a id="more" href="#">Landmarks</a></li>
 						<li><a id="menu" class="hidden" href="#">Menu</a></li>
 							<li id="indentedMenu" class="hidden"><a href="#">Cloud Gate</a></li>
@@ -56,7 +56,7 @@
 							<li id="indentedMenu" class="hidden"><a href="#">Space Needle</a></li>
 							<li id="indentedMenu" class="hidden"><a href="#">White House</a></li>
 							<li id="indentedMenu" class="hidden"><a href="#">Yellowstone</a></li>
-						<li><a class="shown" href="#">Contact Us</a></li>
+						<li><a class="shown" href="contact.html">Contact Us</a></li>
 					</ul>
 				</nav>
 
@@ -71,72 +71,65 @@
 		<!-- Main content -->
 		<main class="mainHide">
 
-			<form action="" method="post">
-				<table>
-					<thead>
-						<tr>
-							<th colspan="2">
-								Contact Us!
-							</th>
-						</tr>
-					</thead>
+			<h2>
+				Contact Us!
+			</h2>
 
-					<tbody>
-						<tr>
-							<td>
-								<label for="firstName" class="required">First Name:</label>
-							</td>
-							<td>
-								<label for="lastName">Last Name:</label>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<input type="text" class="form-control" id="firstName" placeholder="Enter name" required>
-							</td>
-							<td>
-								<input type="text" class="form-control" id="lastNameName" placeholder="Enter name">
-							</td>
-						</tr>
+			<div class="container">
+				<form action="PHP/sendEmail.php" method="post" id="contactForm">
+					<div class="row">
+						<div class="column1">
+							<label for="firstName" class="required">First Name:</label>
+						</div>
+						<div class="column2">
+							<input type="text" id="firstName" name="firstname" placeholder="First Name" required>
+						</div>
+					</div>
 
-						<tr>
-							<td>
-								<label for="email" class="required">Email Address:</label>
-							</td>
-							<td>
-								<label for="phone">Phone Number:</label>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<input type="email" class="form-control" id="email" placeholder="Enter email" required>
-							</td>
-							<td>
-								<input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
-							</td>
-						</tr>
+					<div class="row">
+						<div class="column1">
+							<label for="lastName">Last Name:</label>
+						</div>
+						<div class="column2">
+							<input type="text" id="lastName" name="lastName" placeholder="Last Name">
+						</div>
+					</div>
 
-						<tr>
-							<td>
-								<label for="message" class="required">Message:</label>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<textarea class="form-control" id="message" rows="3" required></textarea>
-							</td>
-						</tr>
+					<div class="row">
+						<div class="column1">
+							<label for="email" class="required">Email Address:</label>
+						</div>
+						<div class="column2">
+							<input type="email" id="email" name="email" placeholder="Email" required>
+						</div>
+					</div>
 
-						<tr>
-							<td>
-								<button type="submit" class="btn btn-primary">Submit</button>
-							</td>
-						</tr>
+					<div class="row">
+						<div class="column1">
+							<label for="phone">Phone Number:</label>
+						</div>
+						<div class="column2">
+							<input type="tel" id="phone" name="phone" placeholder="Phone Number">
+						</div>
+					</div>
 
-					</tbody>
-				</table>
 
-			</form>
+					<div class="row">
+						<div class="column1">
+							<label for="message" class="required">Message:</label>
+						</div>
+						<div class="column2">
+							<textarea id="message" name="message" placeholder="message" style="height:200px" required></textarea>
+						</div>
+					</div>
+
+					<div class="row">
+						<button type="submit">Submit</button>
+					</div>
+
+
+				</form>
+			</div>
 
 		</main>
 

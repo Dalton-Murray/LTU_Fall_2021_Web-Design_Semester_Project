@@ -1,0 +1,161 @@
+<!--- Dalton Murray, Gavin Poulton, Yousif Haddad -->
+
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Home | State Landmarks</title>
+	<link rel="icon" href="../../Assets/US-Map.png" type="image/x-icon">
+
+	<!-- Importing normalization so everything can be normalized when we don't specify something -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="../../CSS/main.css">
+
+	<link rel="stylesheet" href="../../CSS/landmarks.css">
+
+	<!-- Accessbility for other screen resolution/sizes -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+	<!-- Puts everything into a wrapper -->
+	<div id="wrapper">
+
+		<!-- Creates a division for the header -->
+		<div id="mainHead" class="mainHide">
+
+			<header>
+				<img src="../../Assets/US-Map.png" alt="Image of colourful map of United States">
+
+				<div id="mainCentered">
+					<h1>
+						<a href="../../index.html">State Landmarks</a>
+					</h1>
+
+				</div>
+			</header>
+
+		</div>
+
+		<!-- Navigation -->
+		<div id="navigationContainer">
+			<div id="navigationOverlay"></div>
+				<nav id="navigationFull">
+					<ul id="datalist">
+						<li><a class="shown" href="../../index.html">Home</a></li>
+						<li><a id="more" href="#">Landmarks</a></li>
+						<li><a id="menu" class="hidden" href="#">Menu</a></li>
+							<li id="indentedMenu" class="hidden"><a href="../cloudGate/cloudGate.html">Cloud Gate</a></li>
+							<li id="indentedMenu" class="hidden"><a href="../disney/disney.html">Disney</a></li>
+							<li id="indentedMenu" class="hidden"><a href="../empireStateBuilding/empireStateBuilding.html">Empire State Building</a></li>
+							<li id="indentedMenu" class="hidden"><a href="../gatewayArch/gatewayArch.html">Gateway Arch</a></li>
+							<li id="indentedMenu" class="hidden"><a href="../goldenGateBridge/goldenGateBridge.html">Golden Gate Bridge</a></li>
+							<li id="indentedMenu" class="hidden"><a href="../grandCanyon/grandCanyon.html">Grand Canyon</a></li>
+							<li id="indentedMenu" class="hidden"><a href="../hotSprings/hotSprings.html">Hot Springs</a></li>
+							<li id="indentedMenu" class="hidden"><a href="../spaceNeedle/spaceNeedle.html">Space Needle</a></li>
+							<li id="indentedMenu" class="hidden"><a href="../whiteHouse/whiteHouse.html">White House</a></li>
+							<li id="indentedMenu" class="hidden"><a href="../Yellowstone/yellowstone.html">Yellowstone</a></li>
+						<li><a class="shown" href="../../contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+
+				<!-- Navigation button -->
+				<a id="navigationToggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+		</div>
+
+		<!-- Main content -->
+		<main class="mainHide">
+			<h1>
+				Golden Gate Bridge | California
+			</h1>
+
+			<div class="mainTableRow">
+				<div class="mainTableColumn">
+					<figure>
+						<h2>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates voluptas quam quia? Dolores nisi doloribus natus explicabo consequuntur perspiciatis. Vitae dolor id quis perspiciatis ratione, eius aperiam fuga quia in dicta expedita saepe, accusantium iusto placeat! Quos minus tempora tempore placeat porro? Id delectus, ipsum vero nemo quos obcaecati cumque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet blanditiis tempore pariatur eaque numquam dicta, ratione vel ipsa animi earum dolorem aut nisi error quas. Tenetur odio consequatur enim itaque voluptatem sit quos, beatae veniam tempore saepe exercitationem adipisci mollitia! Est adipisci cupiditate officiis quasi tenetur hic laudantium sequi iusto.
+						</h2>
+					</figure>
+
+					<figure>
+						<h3>Population (2020):</h3>
+						<h4>39,538,223</h4>
+					</figure>
+
+					<figure>
+						<h3>Population Density (Mi<sup>2</sup>):</h3>
+						<h4>254</h4>
+					</figure>
+
+					<figure>
+						<h3>Median Income Household (2015-2019):</h3>
+						<h4>$75,235</h4>
+					</figure>
+
+					<figure>
+						<h3>Total Area (Mi<sup>2</sup>):</h3>
+						<h4>163,696</h4>
+					</figure>
+
+					<figure>
+						<h3>Land Area (Mi<sup>2</sup>):</h3>
+						<h4>155,779</h4>
+					</figure>
+
+					<figure>
+						<h3>Water Area (Mi<sup>2</sup>):</h3>
+						<h4>7,916</h4>
+					</figure>
+
+				</div>
+
+				<div class="mainTableColumn">
+					<figure id="noBorder">
+						<a href=""><img id="thumbnail" src="../../Assets/Landmarks/goldenGateBridge/goldenGateBridge-picture.jpg" style="width: 100%"></a>
+					</figure>
+
+					<figure id="noBorder">
+						<iframe src="https://www.youtube-nocookie.com/embed/IVqWosmM8VA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</figure>
+				</div>
+
+			</div>
+
+		</main>
+
+		<!-- Footer -->
+		<div id="footer" class="mainHide">
+			<footer>
+				<a href="../../contact.html">Contact Us</a>
+				<br>
+				<br>
+				<a href="../../privacyPolicy.html">Privacy Policy</a>
+				<br>
+				<br>
+				<a href="../../sitemap.html">Sitemap</a>
+				<br>
+				<br>
+				Copyright &copy; <span id="currentYear"></span> | Dalton Murray, Gavin Poulton, Yousif Haddad
+			</footer>
+		</div>
+
+		<!-- Script to pull the current year for copyright information so it automatically updates -->
+		<script>
+			const date = new Date();
+			let year = date.getFullYear();
+			document.getElementById("currentYear").innerHTML = year;
+		</script>
+
+	</div>
+
+	<!-- Use of jQuery library -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script src="../../JS/main.js"></script>
+
+</body>
+</html>
