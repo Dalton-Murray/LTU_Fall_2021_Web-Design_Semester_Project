@@ -3,7 +3,11 @@
 // Yousif Haddas
 
 // ========================================================================================================================== //
+// PRELOADER
 
+
+
+// ========================================================================================================================== //
 // Handles resizing the navigation so it is properly fullscreen
 function resizeNav() {
     // Set the navigation height to fill the entire window

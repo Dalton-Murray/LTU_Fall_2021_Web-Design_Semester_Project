@@ -7,24 +7,10 @@
 /* ============================== */
 /* = DOCUMENT INFORMATION       = */
 /* =	- Document: main.css    = */
-/* =	- Version:  1.0.3       = */
-/* = 	- Client:   Windows 10  = */
+/* =	- Version:  1.0.7       = */
 /* ============================== */
 
-/* ====================================================== */
-/* = Fonts                                              = */
-/* =	- universal  tahoma, Arial, sans-serif			= */
-/* ====================================================== */
 
-/* ================================================== */
-/* = Colors                                         = */
-/* =	- main background			#   			= */
-/* ================================================== */
-
-/* ======================== */
-/* = CSS DIRECTORY		  = */
-/* =	1. UNIVERSAL 	  = */
-/* ======================== */
 
 
 /* ======================== */
@@ -42,8 +28,25 @@ html, body {
     height: 100%;
 }
 
+/* ======================== */
+/* ===== 2. PRELOADER ===== */
+/* ======================== */
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgb(23, 22, 22);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: opacity 0.3s linear;
+}
+
 /* =================== */
-/* ===== 2. MAIN ===== */
+/* ===== 3. MAIN ===== */
 /* =================== */
 #mainHead{
     position: relative;
@@ -115,7 +118,7 @@ main figure figcaption{
 }
 
 /* ========================= */
-/* ===== 3. NAVIGATION ===== */
+/* ===== 4. NAVIGATION ===== */
 /* ========================= */
 #navigationContainer {
     margin-right: auto;
@@ -265,7 +268,7 @@ main figure figcaption{
 
 
 /* =================== */
-/* ===== 4. BODY ===== */
+/* ===== 5. BODY ===== */
 /* =================== */
 body {
     color: white;
@@ -274,9 +277,9 @@ body {
 }
 
 
-/* ====================== */
-/* ===== 10. FOOTER ===== */
-/* ====================== */
+/* ===================== */
+/* ===== 6. FOOTER ===== */
+/* ===================== */
 footer {
     color: white;
     background-color: #1c5736;
@@ -304,13 +307,17 @@ footer a:hover {
     text-shadow: 2px 2px black;
 }
 
-/* ===================== */
-/* ===== 12. MEDIA ===== */
-/* ===================== */
+/* ==================== */
+/* ===== 7. MEDIA ===== */
+/* ==================== */
 @media screen and (max-width: 600px) {
     .mainTableColumn {
         flex: 100%;
         max-width: 100%;
+    }
+
+    #mainHead header {
+        background-size: cover;
     }
 }
 
@@ -318,5 +325,9 @@ footer a:hover {
     .mainTableColumn {
         flex: 100%;
         max-width: 100%;
+    }
+
+    #mainHead header {
+        background-size: cover;
     }
 }
