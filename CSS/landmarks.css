@@ -1,0 +1,123 @@
+/* ========================= */
+/* ===== DALTON MURRAY ===== */
+/* ===== GAVIN POULTON ===== */
+/* ===== YOUSIF HADDAD ===== */
+/* ========================= */
+
+/* ================================ */
+/* = DOCUMENT INFORMATION         = */
+/* =	- Document: landmarks.css = */
+/* =	- Version:  1.0.2         = */
+/* = 	- Client:   Windows 10    = */
+/* ================================ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+}
+
+h1 {
+    font-size: 2.8vh;
+}
+
+h2 {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 2.7vh;
+    font-weight: normal;
+}
+
+h3 {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 2.1vh;
+}
+
+h4 {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 1.8vh;
+    font-weight: normal;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+p {
+    word-wrap: wrap;
+}
+
+/* ================================================== */
+
+main h1{
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+main figure {
+    border-bottom: 1px solid black;
+}
+
+.mainTableRow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 100%;
+}
+
+.mainTableColumn {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.mainTableColumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.mainTableColumn iframe {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: 45vh;
+}
+
+.mainTableColumn figcaption {
+    font-size: 2.0vh;
+    color: black;
+}
+
+.mainTableColumn figcaption a {
+    text-decoration: none;
+}
+
+#mainSource {
+    padding-left: 45px;
+    text-decoration: none;
+}
+
+#noBorder {
+    border: 0;
+}
+
+/* Ensures that the columns stack on top of each other when screen six is less than 600px */
+@media screen and (max-width: 600px) {
+    .mainTableColumn {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mainTableColumn {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
