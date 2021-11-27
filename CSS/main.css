@@ -72,6 +72,7 @@ body header h1 {
     background-image: url("../Assets/mainBanner.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #mainCentered {
@@ -207,7 +208,6 @@ main figure figcaption{
     background: linear-gradient(180deg, #34c0fa 10%, #2387b0 50%, #11465c 90%);
 }
 
-
 #navigationFull {
     width: 100%;
     position: fixed;
@@ -315,19 +315,11 @@ footer a:hover {
         flex: 100%;
         max-width: 100%;
     }
-
-    #mainHead header {
-        background-size: cover;
-    }
 }
 
 @media screen and (max-width: 800px) {
     .mainTableColumn {
         flex: 100%;
         max-width: 100%;
-    }
-
-    #mainHead header {
-        background-size: cover;
     }
 }
