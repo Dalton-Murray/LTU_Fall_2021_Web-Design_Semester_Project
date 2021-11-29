@@ -5,6 +5,7 @@
 <head>
 
 	<meta charset="utf-8">
+	<meta name="theme-color" content="#4185bb">
 	<meta name="description" content="Some of the most popular and beautiful landmarks in the United States">
 	<meta name="keywords" content="Landmarks, USA, United States, Tourism, Vacation, Destinations, Visit, Places, Top 10,
 		Cloud Gate, Disney, Empire State Building, Gateway Arch, Golden Gate Bridge, Grand Canyon, Hot Springs, Space Needle, White House, Yellowstone">
@@ -129,13 +130,23 @@ data-instant-intensity="viewport-all">
 							<label for="message" class="required">Message:</label>
 						</div>
 						<div class="column2">
-							<textarea id="message" name="message" placeholder="message" style="height:200px" required></textarea>
+							<textarea id="message" name="message" placeholder="Message" style="height:200px" required></textarea>
 						</div>
 					</div>
 
 					<div class="row">
-						<div class="g-recaptcha" data-sitekey="6LcD-0UdAAAAANPjULWbaCYapCBh-1aeB0oGu8oZ"></div>
-						<button type="submit" name="submit">Submit</button>
+						<div class="column2">
+							<div class="g-recaptcha" data-sitekey="6LcD-0UdAAAAANPjULWbaCYapCBh-1aeB0oGu8oZ"></div>
+							<button type="submit" name="submit">Submit</button>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="column1 column2">
+							<h5>*Disclaimer: Currently this form does not actually send emails.
+							<br>
+							Please direct all emails to: <a href="mailto:dalton@dalton-murray.com">dalton@dalton-murray.com</a></h5>
+						</div>
 					</div>
 
 					<input type="hidden" name="recaptcha_response" id="recaptchaResponse">

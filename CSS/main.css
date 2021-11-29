@@ -97,12 +97,13 @@ main figure figcaption{
     color: black;
     font-size: 1.5em;
     text-align: center;
+    padding-top: 5px;
 }
 
 .mainTableRow {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding-top: 15px;
     justify-content: center;
 }
 
@@ -136,8 +137,7 @@ main figure figcaption{
     top: 15px;;
     left: 10px;
     border: 1px solid black;
-    border-radius: 100%;
-    overflow: hidden;
+    outline: 1px solid white;
 }
 
 #navigationToggle span {
@@ -186,6 +186,7 @@ main figure figcaption{
 
 #navigationToggle span {
     background-color: black;
+    border: 1px solid white;
 }
 
 

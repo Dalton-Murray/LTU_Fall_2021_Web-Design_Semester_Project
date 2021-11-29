@@ -1,0 +1,53 @@
+/* ========================= */
+/* ===== DALTON MURRAY ===== */
+/* ===== GAVIN POULTON ===== */
+/* ===== YOUSIF HADDAD ===== */
+/* ========================= */
+
+/* ============================== */
+/* = DOCUMENT INFORMATION       = */
+/* =	- Document: contact.css = */
+/* =	- Version:  1.0.3       = */
+/* = 	- Client:   Windows 10  = */
+/* ============================== */
+
+/* ======================== */
+/* ===== 1. Universal ===== */
+/* ======================== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+/* =================== */
+/* ===== 1. Body ===== */
+/* =================== */
+body {
+    display: flex;
+    background-repeat: no-repeat;
+    background: radial-gradient(circle, rgba(110,110,110,1) 0%, rgba(0,0,0,1) 100%);
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 8vmax;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-size: 6vmax;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    font-size: 3vmax;
+    color: white;
+}
+
+
