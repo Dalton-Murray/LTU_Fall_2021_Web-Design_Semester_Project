@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!--- Dalton Murray, Gavin Poulton, Yousif Haddad -->
 
 <!doctype html>
@@ -81,78 +83,151 @@ data-instant-intensity="viewport-all">
 
 		<!-- Main content -->
 		<main class="mainHide">
+			<div id="programmers">
+				<h2>
+					Who are we?
+				</h2>
+				<div>
+					<h3>
+						Dalton Murray
+					</h3>
+					<h4>
+						Lead Programmer
+					</h4>
+					<h4 id="programmerInfo">
+						Hello, my name is Dalton Murray and I am a college student.
+						<br>
+						I transferred to Lawrence Technological University in the year 2020-2021 and I am currently a junior/senior at the university.
+						<br>
+						I major in Cybersecurity and will be getting a Master's degree in it with the intention of getting a PhD.
+					</h4>
+					<h6>
+						<a href="mailto:dalton@dalton-murray.com">Contact me!</a>
+					</h6>
+				</div>
 
-			<h2>
-				Contact Us!
-			</h2>
+				<br>
+				<div>
+					<h3>
+						Gavin Poulton
+					</h3>
+					<h4>
+						Programmer
+						<br>
+						<h5>
+							Graphical
+						</h5>
+						<h6>
+							<a href="mailto:gpoulton@ltu.edu">Contact me!</a>
+						</h6>
+					</h4>
+				</div>
 
-			<div class="container">
-				<form action="PHP/sendEmail.php" method="POST" id="contactForm">
-					<div class="row">
-						<div class="column1">
-							<label for="firstName" class="required">First Name:</label>
-						</div>
-						<div class="column2">
-							<input type="text" id="firstName" name="firstName" placeholder="First Name" required>
-						</div>
-					</div>
+				<br>
+				<div>
+					<h3>
+						Yousif Haddad
+					</h3>
+					<h4>
+						Programmer
+						<br>
 
-					<div class="row">
-						<div class="column1">
-							<label for="lastName">Last Name:</label>
-						</div>
-						<div class="column2">
-							<input type="text" id="lastName" name="lastName" placeholder="Last Name">
-						</div>
-					</div>
+						<h5>
+							Content
+						</h5>
+						<h6>
+							<a href="mailto:yhaddad@ltu.edu">Contact me!</a>
+						</h6>
+					</h4>
+				</div>
+			</div>
 
-					<div class="row">
-						<div class="column1">
-							<label for="email" class="required">Email Address:</label>
-						</div>
-						<div class="column2">
-							<input type="email" id="email" name="email" placeholder="Email" required>
-						</div>
-					</div>
+			<br>
+			<hr>
+			<br>
+			<div>
+				<h2>
+					Contact Us!
+				</h2>
 
-					<div class="row">
-						<div class="column1">
-							<label for="phone">Phone Number:</label>
+				<div class="container">
+					<form action="PHP/sendEmail.php" method="POST" id="contactForm">
+						<div class="row">
+							<div class="column1">
+								<label for="firstName" class="required">First Name:</label>
+							</div>
+							<div class="column2">
+								<input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+							</div>
 						</div>
-						<div class="column2">
-							<input type="tel" id="phone" name="phone" placeholder="Phone Number">
+
+						<div class="row">
+							<div class="column1">
+								<label for="lastName">Last Name:</label>
+							</div>
+							<div class="column2">
+								<input type="text" id="lastName" name="lastName" placeholder="Last Name">
+							</div>
 						</div>
-					</div>
 
-
-					<div class="row">
-						<div class="column1">
-							<label for="message" class="required">Message:</label>
+						<div class="row">
+							<div class="column1">
+								<label for="email" class="required">Email Address:</label>
+							</div>
+							<div class="column2">
+								<input type="email" id="email" name="email" placeholder="Email" required>
+							</div>
 						</div>
-						<div class="column2">
-							<textarea id="message" name="message" placeholder="Message" style="height:200px" required></textarea>
+
+						<div class="row">
+							<div class="column1">
+								<label for="phone">Phone Number:</label>
+							</div>
+							<div class="column2">
+								<input type="tel" id="phone" name="phone" placeholder="Phone Number">
+							</div>
 						</div>
-					</div>
 
-					<div class="row">
-						<div class="column2">
-							<div class="g-recaptcha" data-sitekey="6LcD-0UdAAAAANPjULWbaCYapCBh-1aeB0oGu8oZ"></div>
-							<button type="submit" name="submit">Submit</button>
+
+						<div class="row">
+							<div class="column1">
+								<label for="message" class="required">Message:</label>
+							</div>
+							<div class="column2">
+								<textarea id="message" name="message" placeholder="Message" style="height:200px" required></textarea>
+							</div>
 						</div>
-					</div>
 
-					<div class="row">
-						<div class="column1 column2">
-							<h5>*Disclaimer: Currently this form does not actually send emails.
-							<br>
-							Please direct all emails to: <a href="mailto:dalton@dalton-murray.com">dalton@dalton-murray.com</a></h5>
+						<div class="row">
+							<div class="column2">
+								<div class="g-recaptcha" data-sitekey="6LcD-0UdAAAAANPjULWbaCYapCBh-1aeB0oGu8oZ"></div>
+								<button type="submit" name="submit">Submit</button>
+							</div>
 						</div>
-					</div>
 
-					<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+						<div class="row">
+							<div class="column1 column2">
+								<?php if (isset($_SESSION['successful']) && !empty($_SESSION['successful'])) { ?>
+									<div class="successful"><?php echo $_SESSION['successful']; ?></div>
+									<?php
+									unset($_SESSION['successful']);
+								}
+								?>
+							</div>
+						</div>
 
-				</form>
+						<div class="row">
+							<div class="column1 column2">
+								<h5>*Disclaimer: Currently this form does not actually send emails.
+								<br>
+								Please direct all emails to: <a href="mailto:dalton@dalton-murray.com">dalton@dalton-murray.com</a></h5>
+							</div>
+						</div>
 
+						<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+					</form>
+
+				</div>
 			</div>
 
 		</main>
@@ -161,7 +236,7 @@ data-instant-intensity="viewport-all">
 		<!-- Footer -->
 		<div id="footer" class="mainHide">
 			<footer>
-				<a href="contact.html">Contact Us</a>
+				<a href="contact.php">Contact Us</a>
 				<br>
 				<br>
 				<a href="cookiePolicy.html">Cookie Policy</a>
@@ -188,6 +263,7 @@ data-instant-intensity="viewport-all">
 
 	<!-- Use of jQuery library -->
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script src="JS/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!-- Allows us to selfhost the instant-page module which preloads pages right before clicking on them -->
 	<script src="instantpage-5.1.0.js" type="module" defer></script>

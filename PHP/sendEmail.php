@@ -1,4 +1,5 @@
-<?php // Check if form was submitted:
+<?php
+// Check if form was submitted:
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])) {
 
     // Build POST request:
@@ -12,30 +13,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])
 
     // Take action based on the score returned:
     if ($recaptcha->score >= 0.5) {
+
         $to = "murraydalton1@comcast.net";
         $from = $_POST['email'];
 
         $firstName = $_POST['firstName'];
         $lastName = $_POST['lastName'];
 
-        $subject = "From State Landmarks";
+        $subject = "From United States Landmarks";
 
         $headers = "From:" . $from;
 
         $message = $_POST['message'];
 
-        $subject2 = "Copy of your inquiry with State Landmarks";
+        $subject2 = "Copy of your inquiry with United States Landmarks";
         $headers2 = "From:" . $to;
 
         mail($to,$subject,$message,$headers);
 
         mail($from,$subject2,$message,$headers2);
 
-        echo "Thank you " . $firstName . ", we will contact you shortly.";
-
-        header("refresh:5; url=https://www.dalton-murray.com/contact.html");
-    } else {
-        // Not verified - show form error
-
+        session_start();
+        $_SESSION['successful'] = "Contact form saved successfully.<br>*Disclaimer: Emails are not actually being sent, however, all PHP is being processed.";
+        header("Location: ../contact.php");
+        exit();
     }
-} ?>
+
+    else {
+        echo '<script>alert("Captcha failed. Please refresh and try again.")</script>';
+    }
+}
+?>

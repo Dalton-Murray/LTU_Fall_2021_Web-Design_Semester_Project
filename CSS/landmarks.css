@@ -7,13 +7,20 @@
 /* ================================ */
 /* = DOCUMENT INFORMATION         = */
 /* =	- Document: landmarks.css = */
-/* =	- Version:  1.0.2         = */
+/* =	- Version:  1.0.5         = */
 /* = 	- Client:   Windows 10    = */
 /* ================================ */
+
+/* ======================== */
+/* ===== 1. Universal ===== */
+/* ======================== */
 * {
     box-sizing: border-box;
 }
 
+/* =================== */
+/* ===== 2. Body ===== */
+/* =================== */
 body {
     color: black;
 }
@@ -51,11 +58,12 @@ p {
     word-wrap: wrap;
 }
 
-/* ================================================== */
-
+/* =================== */
+/* ===== 3. Main ===== */
+/* =================== */
 main h1{
     color: black;
-    font-size: 1.5em;
+    font-size: 2.15em;
     text-align: center;
 }
 
@@ -107,7 +115,10 @@ main figure {
     border: 0;
 }
 
-/* Ensures that the columns stack on top of each other when screen six is less than 600px */
+
+/* ==================== */
+/* ===== 4. Media ===== */
+/* ==================== */
 @media screen and (max-width: 600px) {
     .mainTableColumn {
         flex: 100%;
