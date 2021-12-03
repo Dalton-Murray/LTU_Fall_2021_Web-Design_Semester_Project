@@ -11,8 +11,6 @@
 /* ============================== */
 
 
-
-
 /* ======================== */
 /* ===== 1. UNIVERSAL ===== */
 /* ======================== */
@@ -28,25 +26,8 @@ html, body {
     height: 100%;
 }
 
-/* ======================== */
-/* ===== 2. PRELOADER ===== */
-/* ======================== */
-.preloader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    background: rgb(23, 22, 22);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    transition: opacity 0.3s linear;
-}
-
 /* =================== */
-/* ===== 3. MAIN ===== */
+/* ===== 2. MAIN ===== */
 /* =================== */
 #mainHead{
     position: relative;
@@ -124,7 +105,7 @@ main figure figcaption{
 }
 
 /* ========================= */
-/* ===== 4. NAVIGATION ===== */
+/* ===== 3. NAVIGATION ===== */
 /* ========================= */
 #navigationContainer {
     margin-right: auto;
@@ -271,7 +252,7 @@ main figure figcaption{
 
 
 /* =================== */
-/* ===== 5. BODY ===== */
+/* ===== 4. BODY ===== */
 /* =================== */
 body {
     color: white;
@@ -281,7 +262,7 @@ body {
 
 
 /* ===================== */
-/* ===== 6. FOOTER ===== */
+/* ===== 5. FOOTER ===== */
 /* ===================== */
 footer {
     color: white;
@@ -311,7 +292,7 @@ footer a:hover {
 }
 
 /* ==================== */
-/* ===== 7. MEDIA ===== */
+/* ===== 6. MEDIA ===== */
 /* ==================== */
 @media screen and (max-width: 600px) {
     .mainTableColumn {

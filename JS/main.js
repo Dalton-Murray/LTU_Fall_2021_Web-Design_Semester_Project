@@ -1,11 +1,6 @@
-// Dalton Murray
-// Gavin Poulton
-// Yousif Haddas
-
-// ========================================================================================================================== //
-// PRELOADER
-
-
+// Dalton Murray //
+// Gavin Poulton //
+// Yousif Haddas //
 
 // ========================================================================================================================== //
 // Handles resizing the navigation so it is properly fullscreen
@@ -16,9 +11,13 @@ function resizeNav() {
     // We then set the radius of the circle to the length diagonal of the window
     // This makes it so that we don't accidentally set it to be bigger than the page
     var radius = Math.sqrt(Math.pow(window.innerHeight, 2) + Math.pow(window.innerWidth, 2));
+    // Set the diamter to double the radius
     var diameter = radius * 2;
+    // Set navigationOverlay id so its width is the diameter
     $("#navigationOverlay").width(diameter);
+    // Set navigationOverlay id so its height is the diameter
     $("#navigationOverlay").height(diameter);
+    // Set navigationOverlay css so that margin-top has radius and margin-left has radius
     $("#navigationOverlay").css({"margin-top": -radius, "margin-left": -radius});
 }
 
@@ -35,7 +34,6 @@ $(document).ready(function() {
 });
 
 // ========================================================================================================================== //
-
 // Variable for counter
 var mainHidden = 0;
 
@@ -94,5 +92,3 @@ $(function () {
         $('#more').show();
     });
 });
-
-// ========================================================================================================================== //
