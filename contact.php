@@ -8,9 +8,10 @@
 
 	<meta charset="utf-8">
 	<meta name="theme-color" content="#4185bb">
-	<meta name="description" content="Some of the most popular and beautiful landmarks in the United States">
+	<meta name="description" content="Contact us form, about us">
 	<meta name="keywords" content="Landmarks, USA, United States, Tourism, Vacation, Destinations, Visit, Places, Top 10,
-		Cloud Gate, Disney, Empire State Building, Gateway Arch, Golden Gate Bridge, Grand Canyon, Hot Springs, Space Needle, White House, Yellowstone">
+		Cloud Gate, Disney, Empire State Building, Gateway Arch, Golden Gate Bridge, Grand Canyon, Hot Springs, Space Needle, White House, Yellowstone,
+		contact, contact us, about, about us">
 
 	<title>Contact Us | United States Landmarks</title>
 	<link rel="icon" href="Assets/mainLogo.png" type="image/x-icon">
@@ -59,17 +60,17 @@ data-instant-intensity="viewport-all">
 						<li><a class="shown" href="index.html">Home</a></li>
 						<li><a id="more" href="#">Landmarks</a></li>
 						<li><a id="menu" class="hidden" href="#">Menu</a></li>
-							<li id="indentedMenu" class="hidden"><a href="#">Cloud Gate</a></li>
-							<li id="indentedMenu" class="hidden"><a href="#">Disney</a></li>
-							<li id="indentedMenu" class="hidden"><a href="#">Empire State Building</a></li>
-							<li id="indentedMenu" class="hidden"><a href="#">Gateway Arch</a></li>
-							<li id="indentedMenu" class="hidden"><a href="#">Golden Gate Bridge</a></li>
-							<li id="indentedMenu" class="hidden"><a href="#">Grand Canyon</a></li>
-							<li id="indentedMenu" class="hidden"><a href="#">Hot Springs</a></li>
-							<li id="indentedMenu" class="hidden"><a href="#">Space Needle</a></li>
-							<li id="indentedMenu" class="hidden"><a href="#">White House</a></li>
-							<li id="indentedMenu" class="hidden"><a href="#">Yellowstone</a></li>
-						<li><a class="shown" href="contact.html">Contact Us</a></li>
+							<li id="indentedMenu" class="hidden"><a href="Landmarks/cloudGate/cloudGate.html">Cloud Gate</a></li>
+							<li id="indentedMenu" class="hidden"><a href="Landmarks/disney/disney.html">Disney</a></li>
+							<li id="indentedMenu" class="hidden"><a href="Landmarks/empireStateBuilding/empireStateBuilding.html">Empire State Building</a></li>
+							<li id="indentedMenu" class="hidden"><a href="Landmarks/gatewayArch/gatewayArch.html">Gateway Arch</a></li>
+							<li id="indentedMenu" class="hidden"><a href="Landmarks/goldenGateBridge/goldenGateBridge.html">Golden Gate Bridge</a></li>
+							<li id="indentedMenu" class="hidden"><a href="Landmarks/grandCanyon/grandCanyon.html">Grand Canyon</a></li>
+							<li id="indentedMenu" class="hidden"><a href="Landmarks/hotSprings/hotSprings.html">Hot Springs</a></li>
+							<li id="indentedMenu" class="hidden"><a href="Landmarks/spaceNeedle/spaceNeedle.html">Space Needle</a></li>
+							<li id="indentedMenu" class="hidden"><a href="Landmarks/whiteHouse/whiteHouse.html">White House</a></li>
+							<li id="indentedMenu" class="hidden"><a href="Landmarks/yellowstone/yellowstone.html">Yellowstone</a></li>
+						<li><a class="shown" href="contact.php">Contact Us</a></li>
 					</ul>
 				</nav>
 
@@ -87,20 +88,23 @@ data-instant-intensity="viewport-all">
 				<h2>
 					Who are we?
 				</h2>
+
 				<div>
 					<h3>
 						Dalton Murray
 					</h3>
-					<h4>
+
+					<h4 id="borders">
 						Lead Programmer
 					</h4>
 					<h4 id="programmerInfo">
-						Hello, my name is Dalton Murray and I am a college student.
+						My name is Dalton Murray and I am a college student.
 						<br>
 						I transferred to Lawrence Technological University in the year 2020-2021 and I am currently a junior/senior at the university.
 						<br>
 						I major in Cybersecurity and will be getting a Master's degree in it with the intention of getting a PhD.
 					</h4>
+
 					<h6>
 						<a href="mailto:dalton@dalton-murray.com">Contact me!</a>
 					</h6>
@@ -111,16 +115,22 @@ data-instant-intensity="viewport-all">
 					<h3>
 						Gavin Poulton
 					</h3>
+
 					<h4>
-						Programmer
-						<br>
-						<h5>
-							Graphical
-						</h5>
-						<h6>
-							<a href="mailto:gpoulton@ltu.edu">Contact me!</a>
-						</h6>
+						Programmer - Responsiveness | UI/UX
 					</h4>
+
+					<h4 id="programmerInfo">
+						Hello, my name is Dalton Murray and I am a college student.
+						<br>
+						I transferred to Lawrence Technological University in the year 2020-2021 and I am currently a junior/senior at the university.
+						<br>
+						I major in Cybersecurity and will be getting a Master's degree in it with the intention of getting a PhD.
+					</h4>
+
+					<h6>
+						<a href="mailto:gpoulton@ltu.edu">Contact me!</a>
+					</h6>
 				</div>
 
 				<br>
@@ -129,22 +139,27 @@ data-instant-intensity="viewport-all">
 						Yousif Haddad
 					</h3>
 					<h4>
-						Programmer
-						<br>
+					Programmer - Content | Troubleshooting
 
-						<h5>
-							Content
-						</h5>
-						<h6>
-							<a href="mailto:yhaddad@ltu.edu">Contact me!</a>
-						</h6>
+					<h4 id="programmerInfo">
+						My Name is Yousif Haddad. I am a student at the sophomore/Junior level.
+						<br>
+						I transferred to Lawrence Technological University in the year 2020-2021 from Oakland Community College.
+						<br>
+						I am majoring in Information Technology, and I will be getting a Master’s degree in Cybersecurity or Database Analysis.
 					</h4>
+
+					<h6>
+						<a href="mailto:yhaddad@ltu.edu">Contact me!</a>
+					</h6>
 				</div>
+
 			</div>
 
 			<br>
 			<hr>
 			<br>
+
 			<div>
 				<h2>
 					Contact Us!
@@ -245,7 +260,7 @@ data-instant-intensity="viewport-all">
 				<a href="privacyPolicy.html">Privacy Policy</a>
 				<br>
 				<br>
-				<a href="sitemap.html">Sitemap</a>
+				<a href="sitemap.xml">Sitemap</a>
 				<br>
 				<br>
 				Copyright &copy; <span id="currentYear"></span> | Dalton Murray, Gavin Poulton, Yousif Haddad
