@@ -98,11 +98,11 @@ data-instant-intensity="viewport-all">
 						Lead Programmer
 					</h4>
 					<h4 id="programmerInfo">
-						My name is Dalton Murray and I am a college student.
+						Dalton Murray is a college student.
 						<br>
-						I transferred to Lawrence Technological University in the year 2020-2021 and I am currently a junior/senior at the university.
+						He transferred to Lawrence Technological University in the year 2020-2021 and is currently a junior/senior at the university.
 						<br>
-						I major in Cybersecurity and will be getting a Master's degree in it with the intention of getting a PhD.
+						He majors in Cybersecurity and will be getting a Master's degree in it with the intention of getting a PhD.
 					</h4>
 
 					<h6>
@@ -121,11 +121,13 @@ data-instant-intensity="viewport-all">
 					</h4>
 
 					<h4 id="programmerInfo">
-						Hello, my name is Dalton Murray and I am a college student.
+						Gavin Poulton is a Junior at LTU. He is currently studying IT, and has been at LTU since the Spring of 2020.
 						<br>
-						I transferred to Lawrence Technological University in the year 2020-2021 and I am currently a junior/senior at the university.
+						His role in the creation of this website included idea contributions during the brainstorming phase and 
 						<br>
-						I major in Cybersecurity and will be getting a Master's degree in it with the intention of getting a PhD.
+						assistance in the design/layout of the home and landmark pages, along with proper color theming.
+						<br>
+						He also provided assistance and input regarding usability based on target user demographics.
 					</h4>
 
 					<h6>
@@ -142,11 +144,11 @@ data-instant-intensity="viewport-all">
 					Programmer - Content | Troubleshooting
 
 					<h4 id="programmerInfo">
-						My Name is Yousif Haddad. I am a student at the sophomore/Junior level.
+						Yousif Haddad is a student at the sophomore/Junior level in college.
 						<br>
-						I transferred to Lawrence Technological University in the year 2020-2021 from Oakland Community College.
+						He transferred to Lawrence Technological University in the year 2020-2021 from Oakland Community College.
 						<br>
-						I am majoring in Information Technology, and I will be getting a Master’s degree in Cybersecurity or Database Analysis.
+						He is majoring in Information Technology, and will be getting a Master’s degree in Cybersecurity or Database Analysis.
 					</h4>
 
 					<h6>
