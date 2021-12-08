@@ -18,7 +18,11 @@
 
 	<!-- Importing normalization so everything can be normalized when we don't specify something -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+	<!-- Main CSS -->
 	<link rel="stylesheet" href="CSS/main.css">
+
+	<!-- Contact specific CSS -->
 	<link rel="stylesheet" href="CSS/contact.css">
 
 	<!-- Accessbility for other screen resolution/sizes -->
@@ -33,6 +37,9 @@
             });
         });
     </script>
+
+	<!-- Loading of chevron icon -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 </head>
 <body
@@ -249,7 +256,6 @@ data-instant-intensity="viewport-all">
 
 		</main>
 
-
 		<!-- Footer -->
 		<div id="footer" class="mainHide">
 			<footer>
@@ -278,8 +284,12 @@ data-instant-intensity="viewport-all">
 
 	</div>
 
+	<!-- Creating link to go to top of page -->
+	<a href="javascript:" id="goToTop"><i class="icon-chevron-up"></i></a>
+
 	<!-- Use of jQuery library -->
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script src="JS/main.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="JS/main.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!-- Allows us to selfhost the instant-page module which preloads pages right before clicking on them -->

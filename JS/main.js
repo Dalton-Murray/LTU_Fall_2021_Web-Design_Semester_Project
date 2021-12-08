@@ -92,3 +92,23 @@ $(function () {
         $('#more').show();
     });
 });
+
+// ========================================================================================================================== //
+// Handles scrolling to the top
+$(window).scroll(function() {
+    // Only if you've scrolled 50 pixels down, it shows the button
+    if ($(this).scrollTop() >= 50) {
+        // We start to allow the button/arrow to fade in, allowing it to be shown more gently than instantly shown
+        $('#goToTop').fadeIn(200);
+    } else {
+        // Fades it out if we're not less than 50 pixels down
+        $('#goToTop').fadeOut(200);
+    }
+});
+// If the arrow is clicked
+$('#goToTop').click(function() {
+    $('body,html').animate({
+        // Scroll to the top of the page/body
+        scrollTop : 0
+    }, 500);
+});
