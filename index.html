@@ -13,20 +13,22 @@
 	<title>Home | United States Landmarks</title>
 	<link rel="icon" href="Assets/mainLogo.png" type="image/x-icon">
 
-	<!-- Importing normalization so everything can be normalized when we don't specify something -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="CSS/main.css">
 
 	<!-- Accessbility for other screen resolution/sizes -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Loading of chevron icon -->
-	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body
 data-instant-intensity="20">
+
+	<!-- Preventing render blocking, moved to body -->
+	<!-- Importing normalization so everything can be normalized when we don't specify something -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+	<!-- Loading of chevron icon -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<!--  -->
 
 	<!-- Puts everything into a wrapper -->
 	<div id="wrapper">
@@ -174,7 +176,7 @@ data-instant-intensity="20">
 
 	<!-- Imports popper library -->
 	<script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
-	<script> window.start.init({Palette:"palette6",Mode:"banner bottom",Theme:"wire",LinkText:" Learn More!",Location:"https://www.dalton-murray.com/cookiePolicy.html",Time:"5",})</script>
+	<script> window.start.init({Palette:"palette6",Mode:"banner bottom",Theme:"wire",LinkText:" Learn More!",Location:"https://www.dalton-murray.com/cookiePolicy.html",Time:"2",})</script>
 
 	<!-- Allows us to selfhost the instant-page library which preloads pages right before clicking on them -->
 	<script src="instantpage-5.1.0.js" type="module" defer></script>

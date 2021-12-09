@@ -16,9 +16,6 @@
 	<title>Contact Us | United States Landmarks</title>
 	<link rel="icon" href="Assets/mainLogo.png" type="image/x-icon">
 
-	<!-- Importing normalization so everything can be normalized when we don't specify something -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="CSS/main.css">
 
@@ -38,12 +35,17 @@
         });
     </script>
 
-	<!-- Loading of chevron icon -->
-	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
 </head>
 <body
 data-instant-intensity="viewport-all">
+
+	<!-- Preventing render blocking, moved to body -->
+	<!-- Importing normalization so everything can be normalized when we don't specify something -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+	<!-- Loading of chevron icon -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<!--  -->
 
 	<!-- Puts everything into a wrapper -->
 	<div id="wrapper">
@@ -289,7 +291,10 @@ data-instant-intensity="viewport-all">
 
 	<!-- Use of jQuery library -->
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+	<!-- Using main.js to handle JS for form and ReCaptcha -->
 	<script src="JS/main.js"></script>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!-- Allows us to selfhost the instant-page module which preloads pages right before clicking on them -->

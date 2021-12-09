@@ -42,6 +42,7 @@ $(function () {
     $('#navigationToggle').click(function () {
         // If it is clicked then we hide the menu button
         $('.mainHide').hide();
+        $('.grecaptcha-badge').hide();
         // Add 1 to mainHidden variable
         mainHidden++;
 
@@ -54,6 +55,7 @@ $(function () {
             setTimeout(function () {
                 // Shows everythign in mainHide class
                 $('.mainHide').show();
+                $('.grecaptcha-badge').show();
                 // Sets overflow back to auto
                 document.body.style.overflow = "auto";
             }, 1430);
