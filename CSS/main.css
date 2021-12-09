@@ -203,7 +203,6 @@ main figure figcaption{
     border: 1px solid white;
 }
 
-
 #navigationOverlay {
     position: absolute;
     top: 16px;
@@ -280,7 +279,6 @@ main figure figcaption{
 #back {
     display: none;
 }
-
 
 /* =================== */
 /* ===== 5. BODY ===== */
