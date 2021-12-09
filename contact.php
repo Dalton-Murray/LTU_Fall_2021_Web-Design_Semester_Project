@@ -291,13 +291,12 @@ data-instant-intensity="viewport-all">
 
 	<!-- Use of jQuery library -->
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-	<!-- Using main.js to handle JS for form and ReCaptcha -->
-	<script src="JS/main.js"></script>
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+	<!-- Use uf main.js to handle navigation -->
+	<script src="JS/main.js"></script>
+
 	<!-- Allows us to selfhost the instant-page module which preloads pages right before clicking on them -->
-	<script src="instantpage-5.1.0.js" type="module" defer></script>
+	<script src="JS/instantpage-5.1.0.js" type="module" defer></script>
 </body>
 </html>
