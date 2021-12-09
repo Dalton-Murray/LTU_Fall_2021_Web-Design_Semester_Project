@@ -41,7 +41,7 @@ data-instant-intensity="viewport-all">
 
 	<!-- Preventing render blocking, moved to body -->
 	<!-- Importing normalization so everything can be normalized when we don't specify something -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="CSS/normalize.css">
 
 	<!-- Loading of chevron icon -->
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
